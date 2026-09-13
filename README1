@@ -1,0 +1,53 @@
+a = input()
+b = input()
+print("Введите Ваше имя:")
+print("Введите Ваш возраст:")
+print(f"БИОМЕТРИЯ ЗАВЕРШЕНА: Оператор {a}, {b} лет.")
+print("ДОСТУП РАЗРЕШЕН.")
+программа просит ввести два целых числа а на выводе говорит сколько лет оператору
+a = int(input())
+b = int(input())
+print(f"Сумма: {a} + {b} = {a + b}")
+print(f"Разность: {a} - {b} = {a - b}")
+print(f"Произведение: {a} * {b} = {a * b}")
+if b != 0:
+    print(f"Деление: {a} / {b} = {a / b:.2f}")
+    print(f"Целочисленное деление: {a} // {b} = {a // b}")
+    print(f"Остаток от деления: {a} % {b} = {a % b}")
+else:
+    print("Деление: Ошибка (деление на ноль)")
+    print("Целочисленное деление: Ошибка (деление на ноль)")
+    print("Остаток от деления: Ошибка (деление на ноль)")
+print(f"Возведение в степень: {a} ** {b} = {a ** b}")
+
+credits = float(input("Введите количество кредитов:\n"))
+usd_rate = 1.25
+eur_rate = 1.15
+usd = credits * usd_rate
+eur = credits * eur_rate
+print(f"{credits} кредитов = {usd} $")
+print(f"{credits} кредитов = {eur} €")
+программа просит ввести вещественное число количество денег а на выводе показывает сколько их в евро или долларах
+seconds = int(input("Введите количество секунд с момента старта:\n"))
+hours = seconds // 3600
+minutes = (seconds % 3600) // 60
+secs = seconds % 60
+print(f"Время с момента старта: {seconds} секунд.")
+print(f"Форматированное время: {hours} ч {minutes} мин {secs} сек.")
+
+distance = float(input("Введите расстояние (км):\n"))
+speed = float(input("Введите скорость (км/ч):\n"))
+consumption = float(input("Введите расход топлива (л/100 км):\n"))
+time = distance / speed
+total_fuel = distance / 100 * consumption
+print(f"Маршрут: {distance} км, скорость {speed} км/ч")
+print(f"Время в пути: {time:.2f} часов")
+print(f"Расход топлива: {consumption} л/100 км")
+print(f"Общий расход: {total_fuel:.2f} литров")
+
+celsius = float(input("Введите температуру (°C): "))
+fahrenheit = (celsius * 9/5) + 32
+kelvin = celsius + 273.16
+print(f"Температура по Цельсию: {celsius:.1f} °C")
+print(f"Температура по Фаренгейту: {fahrenheit:.1f} °F")
+print(f"Температура по Кельвину: {kelvin:.1f} K")
